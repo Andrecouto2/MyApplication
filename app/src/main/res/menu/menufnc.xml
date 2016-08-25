@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <!--<item
+        android:id="@+id/menu_add"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/incluir"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_limpar"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:title="@string/limpar"
+        app:showAsAction="never"/>-->
+
+    <item
+        android:id="@+id/menu_salvar"
+        android:icon="@drawable/iconesalvarapp48x48"
+        android:title="@string/salvar"
+        app:showAsAction="always"/>
+</menu>

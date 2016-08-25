@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/itemleitor_height"
+    android:layout_marginLeft="@dimen/itemleitor_margin_left"
+    android:layout_marginRight="@dimen/itemleitor_margin_right"
+    android:layout_marginTop="@dimen/itemleitor_margin_top"
+    android:layout_marginBottom="@dimen/itemleitor_margin_bottom"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="@integer/itemleitor_partleft">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exemplo empresa"
+                android:textSize="@dimen/itemleitor_partleft_textview_font_size"
+                android:layout_marginLeft="@dimen/itemleitor_partleft_margin_left"
+                android:layout_gravity="center"
+                android:fontFamily="open_sans_light"
+                android:id="@+id/textViewNomeEmpresa" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="@integer/itemleitor_partright">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00/00/0000"
+                android:textSize="@dimen/itemleitor_partleft_textview_font_size"
+                android:layout_marginLeft="@dimen/itemleitor_partright_textview_font_size"
+                android:layout_gravity="center"
+                android:fontFamily="open_sans_light"
+                android:id="@+id/textViewCircularDataLeitura" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollViewAddPA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="16dp"
+            android:stretchColumns="1">
+            <TableRow>
+                <TextView android:text="Nome:" android:textSize="16sp"/>
+                <EditText android:id="@+id/nome" android:inputType="textPersonName"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="RG:" android:textSize="16sp"/>
+                <EditText android:id="@+id/rg" android:inputType="text|number"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:text="Empresa:" android:textSize="16sp"/>
+                <EditText android:id="@+id/empresa" android:inputType="text"/>
+            </TableRow>
+        </TableLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/paletaazulclaro"
+        android:layout_weight="@integer/listaleitor_parte_superior"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leitores da circular"
+            android:fontFamily="open_sans_light"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/listaleitor_textview_titulo_margin_left"
+            android:textSize="@dimen/listaleitor_textview_titulo_font_size"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="@integer/listaleitor_parte_meio"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/listaleitor_icone_width"
+            android:layout_height="@dimen/listaleitor_icone_height"
+            android:layout_marginLeft="@dimen/listaleitor_icone_margin_left"
+            android:src="@drawable/icone_ver_leitores"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empresa"
+            android:textStyle="bold"
+            android:fontFamily="open_sans_light"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/listaleitor_txtempresa_margin_left"
+            android:textSize="@dimen/listaleitor_txtempresa_text_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data de leitura"
+            android:textStyle="bold"
+            android:fontFamily="open_sans_light"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/listaleitor_txtdata_margin_left"
+            android:layout_marginRight="@dimen/listaleitor_txtdata_margin_right"
+            android:textSize="@dimen/listaleitor_txtdata_text_size"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:background="@drawable/linecircular">
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list"
+        android:layout_weight="@integer/listaleitor_parte_final"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" >
+    </ListView>
+    <!--<Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:text="OK"
+        android:textColor="@color/WHITE"
+        android:background="@drawable/effectclickbuttondismisspopupcircularleitores"
+        android:layout_gravity="bottom|center"
+        android:padding="5dp"
+        android:id="@+id/btndismiss"/>-->
+
+</LinearLayout>

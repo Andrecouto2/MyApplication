@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/WHITE"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atualizar informações"
+        android:layout_marginLeft="@dimen/popup_fnc_textview_titulo_margin_left"
+        android:layout_marginTop="@dimen/popup_fnc_textview_titulo_margin_top"
+        android:textSize="@dimen/popup_fnc_textview_titulo_textview_font_size"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txtinformativofnc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/popup_fnc_textview_informacao_margin_left"
+        android:layout_marginRight="@dimen/popup_fnc_textview_informacao_margin_right"
+        android:layout_marginTop="@dimen/popup_fnc_textview_informacao_margin_top"
+        android:textSize="@dimen/popup_fnc_textview_informacao_font_size"
+        android:text="@string/txtviewatualizarinformacoes_funcionario"/>
+
+</LinearLayout>

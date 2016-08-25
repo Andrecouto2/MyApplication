@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" android:windowSoftInputMode="stateAlwaysHidden"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+
+        <com.sothree.slidinguppanel.SlidingUpPanelLayout
+            xmlns:sothree="http://schemas.android.com/apk/apk/res-auto"
+            android:id="@+id/sliding_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:background="@color/paletagreen"
+            sothree:panelHeight="68dp"
+            sothree:shadowHeight="4dp">
+            <LinearLayout
+                android:id="@+id/bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/paletagreen"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="test"
+                    android:gravity="center"
+                    android:src="@drawable/icone_os" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/top_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/WHITE"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|top"
+                    android:text="Ordem de serviço"
+                    android:textSize="40sp"
+                    android:fontFamily="Arial"/>
+            </LinearLayout>
+        </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

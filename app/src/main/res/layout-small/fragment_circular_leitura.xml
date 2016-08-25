@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"  android:fitsSystemWindows="true"
+    android:windowSoftInputMode="stateAlwaysHidden"
+    android:weightSum="100"
+    tools:context="com.esperienza.intranetmall.mobile.fragment.FragmentCircularLeitura">
+
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:baselineAligned="false"
+         android:padding="16dp"
+         android:weightSum="1">
+         <Space
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="0.5"/>
+
+         <NumberPicker
+             android:id="@+id/monthNumberPicker"
+             android:layout_width="wrap_content"
+             android:layout_height="55dp"
+             android:background="@color/paletaazulclaro"/>
+
+         <NumberPicker
+             android:id="@+id/yearNumberPicker"
+             android:layout_width="wrap_content"
+             android:layout_height="55dp"
+             android:background="@color/paletaazulclaro" />
+
+     </LinearLayout>-->
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:orientation="horizontal"
+        android:weightSum="50">
+
+
+        <EditText
+            android:id="@+id/edt_data_nasc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:layout_weight="40"
+            android:paddingLeft="5.0dip" />
+
+        <ImageButton
+            android:id="@+id/imageButtonNasc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/calendar" />
+
+
+    </LinearLayout>-->
+
+
+    <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="65dp"
+            android:padding="5sp"
+            android:weightSum="100">
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:entries="@array/spinnerItemsMeses"
+            android:id="@+id/spinnerMes" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:entries="@array/spinnerItemsAnos"
+            android:id="@+id/spinnerAno" />
+
+        </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_weight="@integer/circular_space_legenda_weight"
+        android:weightSum="100"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="96"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/circular_legenda_icone_width"
+                android:layout_height="@dimen/circular_legenda_icone_height"
+                android:src="@drawable/icone_titulo_circular"
+                android:layout_marginLeft="@dimen/circular_legenda_icone_margin_left"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CIRCULAR"
+                android:layout_marginLeft="@dimen/circular_legenda_textviewcircular_margin_left"
+                android:textSize="@dimen/circular_legenda_textviewcircular_text_size"
+                android:textStyle="bold"
+                android:fontFamily="open_sans_light"
+                android:layout_gravity="center"/>
+            <com.esperienza.intranetmall.mobile.fonts.RoundedImageView
+                android:layout_width="@dimen/circular_legenda_ponto_azul_width"
+                android:layout_height="@dimen/circular_legenda_ponto_azul_height"
+                android:layout_marginLeft="@dimen/circular_legenda_ponto_azul_margin_left"
+                android:layout_gravity="center"
+                android:background="@color/paletaazul"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lidas"
+                android:layout_marginLeft="@dimen/circular_legenda_textviewlidas_margin_left"
+                android:textSize="@dimen/circular_legenda_textviewlidas_text_size"
+                android:fontFamily="open_sans_light"
+                android:layout_gravity="center"/>
+
+            <com.esperienza.intranetmall.mobile.fonts.RoundedImageView
+                android:layout_width="@dimen/circular_legenda_ponto_vermelho_width"
+                android:layout_height="@dimen/circular_legenda_ponto_vermelho_height"
+                android:layout_marginLeft="@dimen/circular_legenda_ponto_vermelho_margin_left"
+                android:layout_gravity="center"
+                android:background="@color/RED"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não lidas"
+                android:layout_marginLeft="@dimen/circular_legenda_textviewnaolidas_margin_left"
+                android:textSize="@dimen/circular_legenda_textviewnaolidas_text_size"
+                android:fontFamily="open_sans_light"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:background="@drawable/linecircular">
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="@integer/circular_space_lista_weight"
+        >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/circular_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewCircularLeitura"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:duplicateParentState="true">
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+</LinearLayout>

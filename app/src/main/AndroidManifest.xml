@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.esperienza.intranetmall.mobile" >
+    <!--<provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="com.esperienza.intranetmall.mobile.fileprovider"
+        android:grantUriPermissions="true"
+        android:exported="false">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/filepaths" />
+    </provider>-->
+   <!-- <supports-screens android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"
+        android:resizeable="true"/>-->
+
+
+
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <permission
+        android:name="com.esperienza.intranetmall.mobile.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.esperienza.intranetmall.mobile.permission.C2D_MESSAGE" />
+    <!-- Declara a permissão para se registrar no GCM e receber mensagens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+
+
+    <application
+
+        android:icon="@mipmap/ic_launcherx"
+        android:logo="@drawable/iconmobilemenu"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="false"
+        android:theme="@style/AppTheme" >
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".activity.SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".activity.DetalhePAOSActivity"  android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.LoginActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.BuscaAvancadaOSActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.PesquisaAvancadaActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.MenuActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.PdfCircularActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.ArquivoOsActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.GeraCrachaActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.DestaqueActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"></activity>
+            <!--<intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>-->
+
+        <activity android:name=".fragment.ListaFuncionariosFragment" ></activity>
+        <activity android:name=".activity.DetalheOSActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.AberturaOSActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.ArquivosActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.AberturaOSSequenciaActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"></activity>
+        <activity android:name=".activity.PessoasAutorizadasActivity" android:theme="@style/AppTheme.NoActionBar" android:screenOrientation="portrait"></activity>
+        <receiver
+            android:name="com.esperienza.intranetmall.mobile.gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.esperienza.intranetmall.mobile" />
+
+            </intent-filter>
+        </receiver>
+
+        <!-- Service chamado pelo receiver acima. Deve conter o código para ler as mensagens. -->
+      <service android:name="com.esperienza.intranetmall.mobile.gcm.GcmIntentService" />
+
+        <!--TESTE-->
+        <!--<receiver
+            android:name="com.esperienza.intranetmall.mobile.gcm.BootReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.esperienza.intranetmall.mobile.services.MyService">
+            <intent-filter>
+                <action android:name="com.esperienza.intranetmall.mobile.services.MyService" />
+            </intent-filter>
+        </service>-->
+
+    </application>
+
+    <!--<provider android:authorities="com.catking.contentprovider.MyContentProvider"
+        android:exported="true"
+        android:grantUriPermissions="true"
+        android:name="com.catking.contentprovider.MyContentProvider"
+        android:readPermission="android.permission.permRead"
+        android:writePermission="android.permission.permWrite" >
+    </provider>-->
+
+
+
+</manifest>

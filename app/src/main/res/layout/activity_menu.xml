@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true" tools:openDrawer="start"
+    android:clipToPadding="false"
+    android:id="@+id/drawer_layout"
+    tools:context=".activity.MenuActivity">
+
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+    <include layout="@layout/app_bar_main" android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <android.support.design.widget.NavigationView android:id="@+id/nav_view"
+            android:layout_width="wrap_content" android:layout_height="match_parent"
+            android:layout_gravity="start" android:fitsSystemWindows="true"
+            app:itemTextAppearance="@style/TextAppearence.App.TextInputLayout"
+            app:menu="@menu/activity_main_drawer" android:background="@drawable/background_menu_principal"/>
+
+
+
+
+
+
+
+    <!--SEPARAR-->
+
+
+
+
+
+
+
+
+    <!--<android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--<android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    </android.support.design.widget.AppBarLayout>-->
+    <!--<fragment android:id="@+id/menu_cadfnc"
+    android:layout_width="@dimen/navigation_drawer_width"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    class = "com.esperienza.intranetmall.mobile.fragment.NavigationDrawerFragment"
+    tools:layout="@layout/fragment_navigation_drawer" />-->
+
+   <!-- <include layout="@layout/content_menu_activity" />
+
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email" />-->
+
+
+
+</android.support.v4.widget.DrawerLayout>

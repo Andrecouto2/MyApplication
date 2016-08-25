@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:layout_marginLeft="@dimen/margin_medium"
+    android:layout_marginRight="@dimen/margin_medium"
+    android:foreground="?attr/selectableItemBackground"
+    android:background="@drawable/list_item_bg_normal"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="50">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Circular"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:textSize="15dp"
+                android:textColor="@color/WHITE"
+                android:id="@+id/textViewCircular" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desligar aparelhos"
+                android:textSize="13dp"
+                android:textColor="@color/WHITE"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:id="@+id/textViewNomeCircular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="25">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data"
+                android:textSize="15dp"
+                android:textColor="@color/WHITE"
+                android:layout_gravity="center"
+                android:layout_marginTop="15sp"
+                android:id="@+id/textViewData" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00/00/0000"
+                android:textColor="@color/WHITE"
+                android:textSize="13dp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:id="@+id/textViewDataCircular" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="25">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leitura"
+                android:layout_gravity="center"
+                android:textColor="@color/WHITE"
+                android:textSize="15dp"
+                android:layout_marginTop="15sp"
+                android:id="@+id/textViewLeitura" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:button="@drawable/custom_checkbox"
+                android:id="@+id/checkBoxCircularLeitura" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.esperienza.intranetmall.mobile.fragment.FragmentListaOrdemServico">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_weight="@integer/linear_titulo_weight"
+        android:weightSum="100"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="96"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/funcionario_legenda_icone_width"
+                android:layout_height="@dimen/funcionario_legenda_icone_height"
+                android:src="@drawable/icone_titulo_os"
+                android:layout_marginLeft="@dimen/funcionario_legenda_icone_margin_left"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ORDEM DE SERVIÇO"
+                android:layout_marginLeft="@dimen/funcionario_legenda_textviewfnc_margin_left"
+                android:textSize="@dimen/funcionario_legenda_textviewfnc_text_size"
+                android:textStyle="bold"
+                android:fontFamily="open_sans_light"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:background="@drawable/linecircular">
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="@integer/linear_legenda_weight"
+        android:weightSum="100"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="96"
+            android:weightSum="100"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="20"
+                android:weightSum="100"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status:"
+                        android:textSize="@dimen/legenda_txtview_status_txtsize"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/legenda_txtview_status_marginleft"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="26.66"
+                android:weightSum="100"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="@dimen/legenda_img_status_width"
+                        android:layout_height="@dimen/legenda_img_status_height"
+                        android:src="@drawable/status_os_ffffcc"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Em aprovação"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/legenda_txtview_tipo_status_marginleft"
+                        android:textSize="@dimen/legenda_txtview_tipo_status_txtsize"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50">
+                    <ImageView
+                        android:layout_width="@dimen/legenda_img_status_width"
+                        android:layout_height="@dimen/legenda_img_status_height"
+                        android:src="@drawable/status_os_cccccc"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Em execução"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/legenda_txtview_tipo_status_marginleft"
+                        android:textSize="@dimen/legenda_txtview_tipo_status_txtsize"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="26.66"
+                android:weightSum="100"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50">
+                    <ImageView
+                        android:layout_width="@dimen/legenda_img_status_width"
+                        android:layout_height="@dimen/legenda_img_status_height"
+                        android:src="@drawable/status_os_b2e0ff"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Autorizado"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/legenda_txtview_tipo_status_marginleft"
+                        android:textSize="@dimen/legenda_txtview_tipo_status_txtsize"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50">
+                    <ImageView
+                        android:layout_width="@dimen/legenda_img_status_width"
+                        android:layout_height="@dimen/legenda_img_status_height"
+                        android:src="@drawable/status_os_c1e0d1"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Concluído"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/legenda_txtview_tipo_status_marginleft"
+                        android:textSize="@dimen/legenda_txtview_tipo_status_txtsize"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="26.66"
+                android:weightSum="100"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50">
+                    <ImageView
+                        android:layout_width="@dimen/legenda_img_status_width"
+                        android:layout_height="@dimen/legenda_img_status_height"
+                        android:src="@drawable/status_os_ffcccc"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Não Autorizado"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/legenda_txtview_tipo_status_marginleft"
+                        android:textSize="@dimen/legenda_txtview_tipo_status_txtsize"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50">
+                    <ImageView
+                        android:layout_width="@dimen/legenda_img_status_width"
+                        android:layout_height="@dimen/legenda_img_status_height"
+                        android:src="@drawable/status_os_ffcc99"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expirado"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/legenda_txtview_tipo_status_marginleft"
+                        android:textSize="@dimen/legenda_txtview_tipo_status_txtsize"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:background="@drawable/linecircular">
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="@integer/recyclerview_weight">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/os_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewOS"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:layout_marginTop="0dp"
+                android:duplicateParentState="true">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:src="@android:drawable/ic_input_add"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/paletaazulclaro"
+            />
+
+    </android.support.design.widget.CoordinatorLayout>
+    <ProgressBar
+        android:id="@+id/progressos"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginRight="6dp"
+        android:gravity="center|center_vertical"
+        android:visibility="invisible" />
+
+</LinearLayout>

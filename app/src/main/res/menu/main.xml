@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MenuActivity">
+    <item android:id="@+id/action_os" android:title="@string/funcionalidade_OS"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_circular" android:title="@string/funcionalidade_Circular"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_cadastrofuncionario" android:title="@string/funcionalidade_CadastroFuncionario"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_sobre" android:title="@string/funcionalidade_Sobre"
+        android:orderInCategory="100" app:showAsAction="never" />
+</menu>

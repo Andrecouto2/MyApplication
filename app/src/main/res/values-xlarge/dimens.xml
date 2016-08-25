@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Dimens Lista Circular| INICIO -->
+    <integer name="circular_space_legenda_weight">15</integer>
+    <integer name="circular_space_lista_weight">85</integer>
+    <dimen name="circular_legenda_icone_height">74dp</dimen>
+    <dimen name="circular_legenda_icone_width">74dp</dimen>
+    <dimen name="circular_legenda_icone_margin_left">16dp</dimen>
+    <dimen name="circular_legenda_textviewcircular_margin_left">5dp</dimen>
+    <dimen name="circular_legenda_textviewcircular_text_size">45sp</dimen>
+    <dimen name="circular_legenda_ponto_azul_height">10dp</dimen>
+    <dimen name="circular_legenda_ponto_azul_width">10dp</dimen>
+    <dimen name="circular_legenda_ponto_azul_margin_left">130dp</dimen>
+    <dimen name="circular_legenda_ponto_vermelho_height">10dp</dimen>
+    <dimen name="circular_legenda_ponto_vermelho_width">10dp</dimen>
+    <dimen name="circular_legenda_ponto_vermelho_margin_left">36dp</dimen>
+    <dimen name="circular_legenda_textviewlidas_margin_left">6dp</dimen>
+    <dimen name="circular_legenda_textviewlidas_text_size">30sp</dimen>
+    <dimen name="circular_legenda_textviewnaolidas_margin_left">6dp</dimen>
+    <dimen name="circular_legenda_textviewnaolidas_text_size">30sp</dimen>
+    <!--Dimens Item Lista| INICIO -->
+    <dimen name="circular_item_cardview_height">70dp</dimen>
+    <integer name="circular_space_itemsuperior_weight">96</integer>
+    <integer name="circular_space_iteminferior_weight">4</integer>
+    <integer name="circular_space_item_img_weight">15</integer>
+    <dimen name="circular_space_item_img_margin_left">16dp</dimen>
+    <integer name="circular_space_item_centro_weight">55</integer>
+    <dimen name="circular_space_item_centro_margin_left">10dp</dimen>
+    <dimen name="circular_space_item_centro_textview_font_size">25sp</dimen>
+    <integer name="circular_space_item_right_weight">30</integer>
+    <dimen name="circular_space_item_right_margin_left">2dp</dimen>
+    <dimen name="circular_space_item_right_txtview_font_size">25sp</dimen>
+    <dimen name="circular_space_item_right_txtview_margin_right">5dp</dimen>
+    <!--Dimens Item Lista| FIM -->
+    <!-- pdf circular| INICIO-->
+    <dimen name="circular_pdf_progress_bar_height">80dp</dimen>
+    <dimen name="circular_pdf_progress_bar_width">80dp</dimen>
+    <!-- pdf circular| FIM-->
+    <!--itemleitor| INICIO-->
+    <dimen name="itemleitor_height">50dp</dimen>
+    <dimen name="itemleitor_margin_left">16dp</dimen>
+    <dimen name="itemleitor_margin_right">16dp</dimen>
+    <dimen name="itemleitor_margin_top">16dp</dimen>
+    <dimen name="itemleitor_margin_bottom">16dp</dimen>
+    <integer name="itemleitor_partleft">70</integer>
+    <integer name="itemleitor_partright">30</integer>
+    <dimen name="itemleitor_partleft_textview_font_size">12sp</dimen>
+    <dimen name="itemleitor_partright_textview_font_size">12sp</dimen>
+    <dimen name="itemleitor_partleft_margin_left">16dp</dimen>
+    <dimen name="itemleitor_partright_margin_right">5dp</dimen>
+
+    <!--itemleitor| FIM-->
+
+    <!--listaitemleitor| INICIO-->
+    <integer name="listaleitor_parte_superior">15</integer>
+    <integer name="listaleitor_parte_meio">25</integer>
+    <integer name="listaleitor_parte_final">60</integer>
+    <dimen name="listaleitor_textview_titulo_font_size">30sp</dimen>
+    <dimen name="listaleitor_textview_titulo_margin_left">16dp</dimen>
+    <dimen name="listaleitor_icone_margin_left">16dp</dimen>
+    <dimen name="listaleitor_icone_height">54dp</dimen>
+    <dimen name="listaleitor_icone_width">54dp</dimen>
+    <dimen name="listaleitor_txtempresa_margin_left">5dp</dimen>
+    <dimen name="listaleitor_txtempresa_text_size">55sp</dimen>
+    <dimen name="listaleitor_txtdata_margin_left">180dp</dimen>
+    <dimen name="listaleitor_txtdata_margin_right">5dp</dimen>
+    <dimen name="listaleitor_txtdata_text_size">55sp</dimen>
+    <!--listaitemleitor| FIM-->
+    <!--Dimens Lista Circular| FIM -->
+
+    <!--Dimens Lista Funcionário| INICIO-->
+    <!--legenda funcionario| INICIO-->
+    <integer name="funcionario_space_legenda_weight">15</integer>
+    <integer name="funcionario_space_lista_weight">85</integer>
+    <dimen name="funcionario_legenda_icone_height">78dp</dimen>
+    <dimen name="funcionario_legenda_icone_width">78dp</dimen>
+    <dimen name="funcionario_legenda_icone_margin_left">16dp</dimen>
+    <dimen name="funcionario_legenda_textviewfnc_margin_left">7dp</dimen>
+    <dimen name="funcionario_legenda_textviewfnc_text_size">35sp</dimen>
+    <dimen name="funcionario_legenda_img_update_height">38dp</dimen>
+    <dimen name="funcionario_legenda_img_update_width">38dp</dimen>
+    <dimen name="funcionario_legenda_img_update_margin_left">140dp</dimen>
+    <dimen name="funcionario_legenda_textview_update_text_size">16sp</dimen>
+    <dimen name="funcionario_legenda_textview_update_margin_left">7dp</dimen>
+    <!--legenda funcionario| FIM-->
+    <!--popup func legenda INICIO-->
+    <dimen name="popup_fnc_textview_titulo_margin_left">16dp</dimen>
+    <dimen name="popup_fnc_textview_titulo_textview_font_size">30sp</dimen>
+    <dimen name="popup_fnc_textview_titulo_margin_top">16dp</dimen>
+    <dimen name="popup_fnc_textview_informacao_margin_left">16dp</dimen>
+    <dimen name="popup_fnc_textview_informacao_margin_right">16dp</dimen>
+    <dimen name="popup_fnc_textview_informacao_margin_top">16dp</dimen>
+    <dimen name="popup_fnc_textview_informacao_font_size">16sp</dimen>
+    <!--popup func legenda FIM-->
+
+    <!--item lista fnc INICIO-->
+    <dimen name="item_fnc_height">130dp</dimen>
+    <integer name="item_fnc_linearsuperior">96</integer>
+    <integer name="item_fnc_linearinferior">4</integer>
+    <integer name="item_fnc_linearfoto">15</integer>
+    <integer name="item_fnc_linearinfo">70</integer>
+    <integer name="item_fnc_linearstatus">15</integer>
+    <dimen   name="item_fnc_margin_left">16dp</dimen>
+    <dimen   name="item_fnc_margin_left2">6dp</dimen>
+    <dimen   name="item_fnc_margin_left3">10dp</dimen>
+    <dimen   name="item_fnc_margin_right">16dp</dimen>
+    <dimen   name="item_fnc_margin_bottom">16dp</dimen>
+    <dimen   name="item_fnc_margin_bottom2">5dp</dimen>
+    <dimen   name="item_fnc_margin_bottom3">2dp</dimen>
+    <dimen   name="item_fnc_margin_top">2dp</dimen>
+    <dimen   name="item_fnc_margin_top2">16dp</dimen>
+    <dimen name="item_fnc_foto_width">68dp</dimen>
+    <dimen name="item_fnc_foto_height">68dp</dimen>
+    <dimen name="item_fnc_status_width">68dp</dimen>
+    <dimen name="item_fnc_status_height">68dp</dimen>
+    <dimen name="item_fnc_foto_margin_top">8dp</dimen>
+    <integer name="item_fnc_linearinfo_weight">20</integer>
+    <dimen name="item_fnc_textview_textsize">20sp</dimen>
+    <dimen name="item_fnc_textview_textsize2">16sp</dimen>
+    <dimen name="item_fnc_textview_textsize3">35sp</dimen>
+
+
+
+    <!--item lista fnc FIM-->
+    <!--Dimens Lista Funcionário| FIM-->
+    <!--Dimens detalhe funcionário| INICIO-->
+
+    <!--foto funcionário| INICIO-->
+    <dimen name="foto_fnc_frame_width">370dp</dimen>
+    <dimen name="foto_fnc_frame_height">370dp</dimen>
+    <dimen name="foto_fnc_frame_margin_top">140dp</dimen>
+    <dimen name="foto_fnc_img_camera_width">144dp</dimen>
+    <dimen name="foto_fnc_img_camera_height">144dp</dimen>
+    <dimen name="foto_fnc_img_camera_marginleft">3dp</dimen>
+    <!--foto funcionário| FIM-->
+    <!--Dimens detalhe funcionário| FIM-->
+
+    <!--OS LISTA| INICIO-->
+    <integer name="linear_titulo_weight">13</integer>
+    <integer name="linear_legenda_weight">12</integer>
+    <integer name="recyclerview_weight">80</integer>
+    <dimen name="legenda_txtview_status_txtsize">35sp</dimen>
+    <dimen name="legenda_txtview_tipo_status_txtsize">20sp</dimen>
+    <dimen name="legenda_txtview_status_marginleft">16dp</dimen>
+    <dimen name="legenda_txtview_tipo_status_marginleft">2dp</dimen>
+    <dimen name="legenda_img_status_width">48dp</dimen>
+    <dimen name="legenda_img_status_height">48dp</dimen>
+    <!--OS LISTA| INICIO-->
+    <!--OS ITEM LISTA| INICIO-->
+    <integer name="item_os_linear_img">10</integer>
+    <integer name="item_os_linear_inf">90</integer>
+    <dimen name="item_os_txtview_margin_left1">1dp</dimen>
+    <dimen name="item_os_txtview_margin_left2">2dp</dimen>
+    <dimen name="item_os_txtview_margin_left3">16dp</dimen>
+    <dimen name="item_os_txtview_margin_top1">2dp</dimen>
+    <dimen name="item_os_txtview_margin_top2">10dp</dimen>
+    <dimen name="item_os_txtview_margin_top3">16dp</dimen>
+    <dimen name="item_os_txtview_text_size1">15sp</dimen>
+    <dimen name="item_os_txtview_text_size2">20sp</dimen>
+    <dimen name="item_os_txtview_text_size3">25sp</dimen>
+    <dimen name="item_os_txtview_marginbottom1">2dp</dimen>
+    <dimen name="item_os_txtview_marginbottom2">5dp</dimen>
+    <dimen name="item_os_img_width">58dp</dimen>
+    <dimen name="item_os_img_height">58dp</dimen>
+    <!--OS ITEM LISTA| FIM-->
+    <!--FORMULARIO FNC|INICIO-->
+    <dimen name="item_fnc_form_text_view_header_size">30sp</dimen>
+    <dimen name="item_fnc_form_img_width">48dp</dimen>
+    <dimen name="item_fnc_form_img_height">48dp</dimen>
+    <!--FORMULARIO FNC|FIM-->
+    <!--abertura_os|INICIO-->
+    <dimen name="abertura_os_titulo">25sp</dimen>
+    <dimen name="abertura_os_txyview_continuar">30sp</dimen>
+    <integer name="abertura_os_header">30</integer>
+    <integer name="abertura_os_body">60</integer>
+    <integer name="abertura_os_footer">10</integer>
+    <!--abertura_os|FIM-->
+</resources>

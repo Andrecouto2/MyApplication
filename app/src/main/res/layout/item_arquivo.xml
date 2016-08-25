@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    android:layout_margin="6dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="6dp"
+    card_view:cardUseCompatPadding="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/imgviewdoc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/file_text_48"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="75"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="2dp"
+            android:orientation="horizontal"
+            android:background="@color/gray_very_light"
+            android:layout_weight="25"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/icone_adicionar_arquivos"/>
+            <TextView
+                android:id="@+id/txtviewdocname"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="1dp"
+                android:layout_gravity="center"
+                android:alpha="0.7"
+                android:text="Acordao"/>
+            <ImageView
+                android:id="@+id/imgviewoptions"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:alpha="0.7"
+                android:background="@drawable/icone_options_48x48"
+                android:layout_gravity="right|center_vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </android.support.v7.widget.CardView>

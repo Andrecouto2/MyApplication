@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_viewos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false"
+    card_view:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="96"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="@integer/item_os_linear_img"
+            android:orientation="horizontal"
+            >
+            <!-- Foto do carro -->
+            <ImageView
+                android:id="@+id/imgviewos"
+                android:layout_width="@dimen/item_os_img_width"
+                android:layout_height="@dimen/item_os_img_height"
+                android:layout_gravity="top"
+                android:layout_marginTop="@dimen/item_os_txtview_margin_top2"
+                android:src="@drawable/ic_acao_play"
+                android:layout_marginLeft="@dimen/item_os_txtview_margin_left3"/>
+            <!-- Barra de progresso enquanto carrega
+            <ProgressBar
+                android:id="@+id/progressImg"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginRight="6dp"
+                android:gravity="center|center_vertical"
+                android:visibility="invisible" />-->
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="@integer/item_os_linear_inf"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="20">
+        <TextView
+            android:id="@+id/textViewDescOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OS "
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/item_os_txtview_margin_left1"
+            android:layout_marginTop="@dimen/item_os_txtview_margin_top3"
+            android:textSize="@dimen/item_os_txtview_text_size3" />
+        <TextView
+            android:id="@+id/textViewOScard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_os_txtview_margin_left2"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/item_os_txtview_margin_top3"
+            android:textSize="@dimen/item_os_txtview_text_size3" />
+            <TextView
+                android:id="@+id/textViewDescDataOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data:"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/item_os_txtview_margin_left3"
+                android:layout_marginTop="@dimen/item_os_txtview_margin_top3"
+                android:textSize="@dimen/item_os_txtview_text_size3" />
+            <TextView
+                android:id="@+id/textViewDataOScard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00/00/0000 "
+                android:layout_marginLeft="@dimen/item_os_txtview_margin_left2"
+                android:layout_marginTop="@dimen/item_os_txtview_margin_top3"
+                android:textSize="@dimen/item_os_txtview_text_size3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="20">
+
+            <TextView
+                android:id="@+id/textViewServicoOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_os_txtview_margin_left1"
+                android:text="Serviço: "
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/item_os_txtview_margin_top1"
+                android:textSize="@dimen/item_os_txtview_text_size2" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="20">
+            <TextView
+                android:id="@+id/textViewDescSolicitanteOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solicitante: "
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/item_os_txtview_margin_left1"
+                android:layout_marginTop="@dimen/item_os_txtview_margin_top1"
+                android:textSize="@dimen/item_os_txtview_text_size1" />
+            <TextView
+                android:id="@+id/textViewSolicitanteOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_os_txtview_margin_left1"
+                android:layout_marginTop="@dimen/item_os_txtview_margin_top1"
+                android:textSize="@dimen/item_os_txtview_text_size1" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="20">
+            <TextView
+                android:id="@+id/textViewDescemailOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail: "
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/item_os_txtview_margin_left1"
+                android:layout_marginTop="@dimen/item_os_txtview_margin_top1"
+                android:textSize="@dimen/item_os_txtview_text_size1" />
+            <TextView
+                android:id="@+id/textViewemailOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_os_txtview_margin_left1"
+                android:layout_marginTop="@dimen/item_os_txtview_margin_top1"
+                android:textSize="@dimen/item_os_txtview_text_size1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="20">
+            <TextView
+                android:id="@+id/textViewDescDescrOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descrição: "
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/item_os_txtview_margin_left1"
+                android:layout_marginTop="@dimen/item_os_txtview_margin_top1"
+                android:layout_marginBottom="@dimen/item_os_txtview_marginbottom1"
+                android:textSize="@dimen/item_os_txtview_text_size1" />
+            <TextView
+                android:id="@+id/textViewDescrOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/item_os_txtview_margin_left1"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="@dimen/item_os_txtview_margin_top1"
+                android:layout_marginBottom="@dimen/item_os_txtview_marginbottom2"
+                android:textSize="@dimen/item_os_txtview_text_size1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

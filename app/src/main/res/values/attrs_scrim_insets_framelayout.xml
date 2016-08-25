@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ScrimInsetsView">
+        <attr name="scrimInsetForeground" format="reference|color" />
+    </declare-styleable>
+
+    <attr name="fontPath" format="string" />
+
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean">false</attr>
+        <attr name="border_width" format="dimension">2dp</attr>
+        <attr name="border_color" format="color">#E91E63</attr>
+        <attr name="shadow" format="boolean">true</attr>
+    </declare-styleable>
+
+    <declare-styleable name="Theme">
+        <attr name="circularImageViewStyle" format="reference">circle</attr>
+    </declare-styleable>
+</resources>

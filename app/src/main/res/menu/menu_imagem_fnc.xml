@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_img_fnc_tirarfoto"
+        android:title="Carregar foto"/>
+
+    <item
+        android:id="@+id/menu_img_fnc_buscarfoto"
+        android:title="Escolher a partir de Fotos" />
+    <item
+        android:id="@+id/menu_img_fnc_crop"
+        android:title="Recortar foto"/>
+    <!--<item
+        android:id="@+id/menu_img_fnc_verfoto"
+        android:title="Ver foto"/>-->
+</menu>

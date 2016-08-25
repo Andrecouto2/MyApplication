@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<ScrollView
+        android:id="@+id/scrollViewImagemFnc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <!--<TextView
+        android:id="@+id/tx_nomecorrentista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="Foto do funcionário"
+        android:textStyle="bold"
+        android:textSize="30sp" />-->
+
+            <!--<FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/background"
+                android:layout_width="350dp"
+                android:layout_height="300dp">-->
+
+            <FrameLayout
+                android:layout_width="@dimen/foto_fnc_frame_width"
+                android:layout_height="@dimen/foto_fnc_frame_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                >
+
+                <ImageView
+                    android:id="@+id/img_fnc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:layout_gravity="bottom"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds = "true"
+                    android:tag="foto"
+                    android:background="@drawable/foto_perfil_generico"
+
+                     />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/foto_fnc_img_camera_width"
+                        android:layout_height="@dimen/foto_fnc_img_camera_height"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginLeft="@dimen/foto_fnc_img_camera_marginleft"
+                        android:background="@color/transparent00"
+                        android:src="@drawable/icone_upload_foto" />
+
+
+
+
+
+            </FrameLayout>
+
+            <!--<ImageView
+                android:id="@+id/img_fnc"
+                android:layout_margin="10dp"
+                android:padding="3dp"
+                android:layout_gravity="center|center_vertical"
+                android:clickable="true"
+                android:background="@drawable/background_img_fnc"
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/camera">
+            </ImageView>
+                    <ImageView
+                        android:id="@+id/img_cam"
+                        android:layout_width="50dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="10dp"
+                        android:padding="3dp"
+                        android:layout_marginLeft="900sp"
+                        android:layout_gravity="bottom"
+                        android:src="@drawable/camera_photo">
+                    </ImageView>-->
+
+           <!--</FrameLayout>-->
+        </LinearLayout>
+    <!--</ScrollView>-->
+
+</LinearLayout>

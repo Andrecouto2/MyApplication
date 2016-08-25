@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.esperienza.intranetmall.mobile.fragment.FragmentDadosBasicosFuncionario">
+
+    <!--<Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"/>-->
+
+
+    <!--<ScrollView
+        android:id="@+id/scrollViewDadosBasicos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6sp"
+        android:layout_gravity="center_horizontal">-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txt_cpf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4sp"
+            android:text="CPF"
+            android:fontFamily="open_sans_light"
+            android:textSize="@dimen/item_fnc_form_text_view_header_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+            <com.esperienza.intranetmall.mobile.fonts.CpfEditText
+                android:id="@+id/edt_cpf"
+                android:layout_width="0dp"
+                android:layout_weight="100"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:tag="cpf"
+                ></com.esperienza.intranetmall.mobile.fonts.CpfEditText>
+
+            <!--<ImageButton
+                android:id="@+id/btn_buscar_cpf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="20"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/ic_search_black_48dp" />-->
+
+        </LinearLayout>
+            <TextView
+                android:id="@+id/txt_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome"
+                android:fontFamily="open_sans_light"
+                android:textSize="@dimen/item_fnc_form_text_view_header_size"   />
+
+            <EditText
+                android:id="@+id/edt_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="nome_lojista"
+                android:inputType="text" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+            <TextView
+                android:id="@+id/txt_doc_numero"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:text="Número do RG"
+                android:fontFamily="open_sans_light"
+                android:textSize="@dimen/item_fnc_form_text_view_header_size"   />
+            <TextView
+                android:id="@+id/txt_data_emissao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:fontFamily="open_sans_light"
+                android:text="Data Nascimento"
+                android:textSize="@dimen/item_fnc_form_text_view_header_size"  />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/edt_doc_numero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tag="rg"
+                    android:inputType="text" />
+               </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:orientation="horizontal"
+                    android:weightSum="50">
+
+
+                    <EditText
+                        android:id="@+id/edt_data_nasc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:layout_weight="40"
+                        android:tag="datanasc"
+                        android:paddingLeft="5.0dip" />
+
+                    <ImageButton
+                        android:id="@+id/imageButtonNasc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:src="@drawable/ic_date_range_black_48dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:id="@+id/txt_naturalidade"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Naturalidade"
+                    android:fontFamily="open_sans_light"
+                    android:textSize="@dimen/item_fnc_form_text_view_header_size"   />
+                <TextView
+                    android:id="@+id/txt_sexo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:fontFamily="open_sans_light"
+                    android:text="Sexo"
+                    android:textSize="@dimen/item_fnc_form_text_view_header_size"  />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/edt_naturalidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="naturalidade"
+                android:inputType="text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:weightSum="100"
+            android:orientation="horizontal">
+
+
+            <Spinner
+                android:id="@+id/sp_sexo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:layout_gravity="bottom|right"
+                android:tag="sexo"
+                android:entries="@array/list_sexo" />
+
+            <TextView
+                android:id="@+id/tvInvisibleErrorSexo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_weight="20" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+            <TextView
+                android:id="@+id/txt_nomemae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome da mãe"
+                android:fontFamily="open_sans_light"
+                android:textSize="@dimen/item_fnc_form_text_view_header_size"  />
+
+            <EditText
+                android:id="@+id/edt_nomemae"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="filiacao_mae"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/txt_nomepai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome do pai"
+                android:fontFamily="open_sans_light"
+                android:textSize="@dimen/item_fnc_form_text_view_header_size"  />
+
+            <EditText
+                android:id="@+id/edt_nomepai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="filiacao_pai"
+                android:inputType="text" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:id="@+id/txt_cargo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Cargo"
+                    android:fontFamily="open_sans_light"
+                    android:textSize="@dimen/item_fnc_form_text_view_header_size"  />
+                <TextView
+                    android:id="@+id/txt_telefone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Telefone"
+                    android:fontFamily="open_sans_light"
+                    android:textSize="@dimen/item_fnc_form_text_view_header_size" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/edt_cargo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="cargo_lojista"
+                android:inputType="text" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edt_telefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="telefone"
+                android:inputType="phone" />
+           </LinearLayout>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+                <TextView
+                    android:id="@+id/txt_dataadm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Data Admissão"
+                    android:fontFamily="open_sans_light"
+                    android:textSize="@dimen/item_fnc_form_text_view_header_size"  />
+                <TextView
+                    android:id="@+id/txt_datadem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Data Demissão"
+                    android:fontFamily="open_sans_light"
+                    android:textSize="@dimen/item_fnc_form_text_view_header_size"  />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edt_data_adm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:layout_weight="40"
+                    android:paddingLeft="5.0dip"
+                    android:tag="data_adm"/>
+
+                <ImageButton
+                    android:id="@+id/imageButtonAdm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_date_range_black_48dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_data_dem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:layout_weight="40"
+                    android:tag="data_dem"
+                    android:paddingLeft="5.0dip" />
+
+                <ImageButton
+                    android:id="@+id/imageButtondem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/ic_date_range_black_48dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+        </FrameLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <!-- footer -->
+
+        </FrameLayout>
+
+</RelativeLayout>
+
+    <!--</ScrollView>-->
+
+
+</ScrollView>

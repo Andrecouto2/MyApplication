@@ -1,0 +1,294 @@
+<resources>
+    <string name="app_name">Intranet Mall</string>
+
+
+    <string name="app_version">Versão: 0.1.20151011</string>
+    <string name="pessoas"><u>ADICIONAR PESSOAS</u></string>
+    <string name="arquivos"><u>ADICIONAR ARQUIVO</u></string>
+    <string name="ordem_servico">ORDEM DE\n<h><b>SERVIÇO</b></h></string>
+
+    <string name="title_section1">Listar Contas</string>
+    <string name="title_section2">Abertura C/C</string>
+    <string name="title_section3">Capturar Documentos</string>
+    <string name="title_section4">Enviar Documentos</string>
+    <string name="title_section5">Editar Perfil</string>
+    <string name="title_section6">Logout</string>
+    <string name="title_dialog_documento">Capturar Documento</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_salvar">Salvar</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash_screen">C/C Mobile</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">IntraMall</string>
+    <string name="title_activity_splash_sistema_nome">Bem Vindo ao IntraNetMall Mobile</string>
+    <string name="title_activity_splash_sistema_sub_nome">A tecnologia na palma da mão</string>
+    <string name="hello_blank_fragment">Em Desenvolvimento!</string>
+    <string name="incluir">Incluir</string>
+    <string name="limpar">Limpar</string>
+    <string name="salvar">Salvar</string>
+
+    <string name="titulo_dados_basicos">Dados Básicos</string>
+    <string name="titulo_endereco_residencial">Endereço Residencial</string>
+    <string name="titulo_endereco_comercial">Outro Endereço</string>
+    <string name="titulo_relacionamentopf">Relacionamentos PF</string>
+    <string name="titulo_relacionamentopj">Relacionamentos PJ</string>
+    <string name="titulo_dados_complementares">Dados Complementares</string>
+    <string name="titulo_renda">Renda</string>
+    <string name="titulo_politicamente_exposto">Politicamente Exposto</string>
+    <string name="titulo_referencias_pessoais">Referências Pessoais</string>
+    <string name="titulo_referencias_comerciais">Referências Comerciais</string>
+    <string name="titulo_patrimonio">Patrimônio</string>
+    <string name="titulo_relacoes_exteriores">Relações Exteriores</string>
+
+    <!-- Label de campos -->
+    <string name="lbl_field_carregando">Carregando</string>
+    <string name="lbl_field_login_wm">Digite o login Webmaster</string>
+    <string name="lbl_field_login">Usuario</string>
+    <string name="lbl_field_atencao">ATENÇÃO</string>
+    <string name="lbl_field_txt_tipo_doc">Posicione a camera de forma que os dados do documento fiquem legíveis no quadro abaixo.</string>
+    <string name="lbl_field_txt_assinar_txt">Assine dentro no quadrado abaixo:</string>
+    <string name="lbl_field_codseguraca">Código de Segurança</string>
+    <string name="lbl_field_select_banco">Consignatário:</string>
+    <string name="lbl_field_select_consignante">Consignante:</string>
+    <string name="lbl_field_empresa">Empresa</string>
+    <string name="lbl_field_matricula">Benefício</string>
+    <string name="lbl_field_tipo_operacao">Tipo de Operação</string>
+    <string name="lbl_field_cpf">CPF</string>
+    <string name="lbl_field_dtnasc">Data de Nasc.</string>
+    <string name="lbl_field_tipo">Tipo</string>
+    <string name="lbl_field_desconto">Descontos</string>
+    <string name="lbl_field_desconto_outros">outros descontos</string>
+    <string name="lbl_field_valor_contrato">Valor do Contrato</string>
+    <string name="lbl_field_codigo">Cód.</string>
+    <string name="lbl_field_banco">Banco</string>
+    <string name="lbl_field_tabela">Tabela</string>
+    <string name="lbl_field_iof">IOF</string>
+    <string name="lbl_field_cet">CET</string>
+    <string name="lbl_field_valor">Valor</string>
+    <string name="lbl_field_valor_renda">Valor Renda</string>
+    <string name="lbl_field_valor_renda_liquida">Renda Liquida</string>
+    <string name="lbl_field_valor_emprestimo">Valor Liberado</string>
+    <string name="lbl_field_valor_operacao">Valor da Operação</string>
+    <string name="lbl_field_valor_liquido">Valor líquido</string>
+    <string name="lbl_field_valor_iof">IOF</string>
+    <string name="lbl_field_valor_parcela">Valor da Parcela</string>
+    <string name="lbl_field_valor_troco">Valor Troco</string>
+    <string name="lbl_field_dt_primero_pagamento">Data do primeiro vencimento</string>
+    <string name="lbl_field_dt_ultima_parcela">Data do último vencimento</string>
+    <string name="lbl_field_coeficiente">Coefic.</string>
+    <string name="lbl_field_loading">Atualizando as informações do sistema, aguarde!</string>
+    <string name="lbl_field_hardware">BootLoader:</string>
+    <string name="lbl_field_model">Modelo:</string>
+    <string name="lbl_field_android_id">Código de série:</string>
+    <string name="lbl_field_validar_ususario">Validar o usuário:</string>
+    <string name="lbl_field_Informacoes_hardware">Informações do Hardware</string>
+    <string name="lbl_field_proprietario">Proprietário</string>
+    <string name="lbl_field_parcela">Parcela</string>
+    <string name="lbl_field_parcela_numero">Nº Parcelas</string>
+    <string name="lbl_field_quantidade_parcela">Qtd. de Parcelas</string>
+    <string name="lbl_field_liberado">Liberado</string>
+    <string name="lbl_field_saldo">Saldo</string>
+    <string name="lbl_field_troco">Troco</string>
+    <string name="lbl_field_simulado">Simulado</string>
+    <string name="lbl_field_regra">Regra</string>
+    <string name="lbl_field_quantidade">Qtde</string>
+    <string name="lbl_field_prazo">Prazo</string>
+    <string name="lbl_field_pagas">Pagas</string>
+    <string name="lbl_field_numcontrato">Nº Contato</string>
+    <string name="lbl_field_outras_consignacoes">Outras consignações</string>
+    <string name="lbl_field_max_parcelas">Máx. Parcelas</string>
+    <string name="lbl_field_max_emprestimo">Máx. Empréstimo</string>
+    <string name="lbl_field_margem">Margem</string>
+    <string name="lbl_field_tipo_documento">Tipo de dcoumento</string>
+    <string name="lbl_field_nome">Nome</string>
+    <string name="lbl_field_situacao">Situação</string>
+    <string name="lbl_field_telefone">Tel. fixo</string>
+    <string name="lbl_field_celular">Celular</string>
+    <string name="lbl_field_correntista">Correntista?</string>
+    <string name="lbl_field_calculo_tabela">Tabela de calculo</string>
+    <string name="lbl_field_calculo_tipo">Tipo de calculo</string>
+
+    <!-- Label de Menus -->
+    <string name="lbl_menu_configuracao">Configurações</string>
+    <string name="lbl_menu_produto">Contratação</string>
+    <string name="lbl_menu_relatorio">Relatórios</string>
+    <string name="lbl_menu_transmissao">Transmissão</string>
+    <string name="lbl_menu_aletas">Alertas</string>
+    <string name="lbl_menu_editar">Editar</string>
+    <string name="lbl_menu_capturar_docs">Capturar Documentos</string>
+    <string name="lbl_menu_Enviar">Enviar</string>
+    <string name="lbl_menu_remover">Remover</string>
+
+
+
+    <!-- Label de Botoes -->
+    <string name="lbl_btn_selecionar">Selecionar</string>
+    <string name="lbl_btn_cancelar">Cancelar</string>
+    <string name="lbl_btn_logar">Entrar</string>
+    <string name="lbl_btn_credito_consignado">Crédito Consignado</string>
+    <string name="lbl_btn_nova_conta">Abertura de Conta Corrente</string>
+    <string name="lbl_btn_credito_pessoal">Crédito Pessoal</string>
+    <string name="lbl_btn_cartao_credito">Cartão de Crédito</string>
+    <string name="lbl_btn_seguro">Seguros</string>
+    <string name="lbl_btn_ok">OK</string>
+    <string name="lbl_btn_nav_dados_cliente">Dados do Cliente</string>
+    <string name="lbl_btn_nav_dados_contrato">Dados do Contrato</string>
+    <string name="lbl_btn_nav_documentos">Documentos</string>
+    <string name="lbl_btn_nav_assinatura">Assinatura</string>
+    <string name="lbl_btn_pesquisar">Pesquisas</string>
+    <string name="lbl_btn_calcular">Calcular</string>
+    <string name="lbl_btn_simular">Simular</string>
+    <string name="lbl_btn_capturar">Capturar</string>
+    <string name="lbl_btn_assinar">Assinar</string>
+    <string name="lbl_btn_resetsimulador">Retornar valores originais</string>
+
+    <string name="title_activity_login">Login</string>
+
+    <string name="about_dialog_text">
+<![CDATA[
+<b>Aplicativo Intranet Mall 2016</b><br>
+Versao %s<br><br>
+<a href="http://intranetmall.com.br">http://intranetmall.com.br</a><br><br>
+
+	]]>
+	</string>
+    <string name="about_dialog_title">Intranet Mall</string>
+    <string name="ok">OK</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_usuario">Digite seu Usuário</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Digite sua Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="error_invalid_email">Usuario Invalido</string>
+    <string name="error_invalid_password">Senha muito curta</string>
+    <string name="error_incorrect_password">Senha incorreta</string>
+    <string name="error_field_required">Esse campo é obrigatório</string>
+    <string name="lbl_field_senha">Senha</string>
+    <string name="login_invalido">Usuário ou Senha incorretos</string>
+    <string name="login_shop">Shopping</string>
+    <string name="funcionalidade_home">Home</string>
+    <string name="funcionalidade_Circular">Circular</string>
+    <string name="funcionalidade_OS">Ordem de Serviço</string>
+    <string name="funcionalidade_CadastroFuncionario">Funcionários</string>
+    <string name="funcionalidade_Sobre">Sobre</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Create</item>
+        <item>Read</item>
+        <item>Help</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string-array name="intramall_array">
+        <item>Ordem de Serviço</item>
+        <item>Nova Circular</item>
+        <item>Cadastro Funcionário</item>
+
+    </string-array>
+    <string-array name="array_statusfnc">
+        <item>Todos</item>
+        <item>Aguardando aprovação do Depto. de Segurança</item>
+        <item>Aprovado. Aguardando Emissão do Crachá</item>
+        <item>Cadastro reprovado pelo Depto. de Segurança</item>
+        <item>Crachá em emissão</item>
+        <item>Crachá na ADM. Aguardando retirada</item>
+        <item>Foto fora do padrão. Reenviar</item>
+        <item>Funcionário Ativo</item>
+        <item>Funcionário Inativo</item>
+        <item>Novo Cadastro</item>
+
+    </string-array>
+
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="element_text">Element</string>
+    <string name="grid_layout_manager">Grid Layout Manager</string>
+    <string name="linear_layout_manager">Linear Layout Manager</string>
+
+    <string-array name="list_sexo">
+        <item>Selecione</item>
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+    <string-array name="ufs">
+        <item>Selecione</item>
+        <item>AC</item>
+        <item>AL</item>
+        <item>AM</item>
+        <item>AP</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MG</item>
+        <item>MS</item>
+        <item>MT</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>PR</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>RS</item>
+        <item>SC</item>
+        <item>SE</item>
+        <item>SP</item>
+        <item>TO</item>
+    </string-array>
+
+        <string-array name="spinnerItemsMeses">
+            <item>Selecione Mês</item>
+            <item>Janeiro</item>
+            <item>Fevereiro</item>
+            <item>Março</item>
+            <item>Abril</item>
+            <item>Maio</item>
+            <item>Junho</item>
+            <item>Julho</item>
+            <item>Agosto</item>
+            <item>Setembro</item>
+            <item>Outubro</item>
+            <item>Novembro</item>
+            <item>Dezembro</item>
+        </string-array>
+
+    <string-array name="spinnerItemsAnos">
+        <item>Selecione Ano</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+    </string-array>
+    <string name="txtviewatualizarinformacoes_funcionario">
+        Clique e mantenha pressionado sobre o item da lista e no menu escolha a opção enviar
+        para atualizar suas informações no sistema.
+    </string>
+
+</resources>

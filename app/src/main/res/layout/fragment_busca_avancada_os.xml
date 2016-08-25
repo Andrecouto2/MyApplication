@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:id="@+id/carddatahora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="?android:dividerHorizontal"
+        android:showDividers="end"
+        android:orientation="vertical"
+       >
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERÍODO DO SERVIÇO"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="16sp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="open_sans_light"/>-->
+
+        <!--<TextView
+            android:id="@+id/txt_data_inicial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="16sp"
+
+            android:text=""
+
+           />-->
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:stretchColumns="3">
+
+
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1">
+
+                <Space
+                    android:id="@+id/TextView02" android:text="Data"
+                    android:layout_weight="0.2"
+
+                    android:padding="5dip" android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/TextView04" android:text="Data Inicial"
+                    android:layout_weight="0.4"
+                    android:textStyle="bold"
+                    android:padding="5dip" android:gravity="left"/>
+
+                <TextView
+                    android:id="@+id/TextView03" android:text="Data Final"
+                    android:layout_weight="0.4"
+                    android:textStyle="bold"
+
+                    android:padding="5dip" android:gravity="left"/>
+
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/TextView33" android:text="Período:"
+                    android:layout_weight="0.2"
+                    android:padding="5dip" android:gravity="left"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/txt_data_inicial"
+                    android:layout_weight="0.4"
+                    android:text="--"
+                    android:padding="5dip"
+                    android:gravity="left"/>
+
+                <TextView
+                    android:id="@+id/txt_data_final"
+                    android:layout_weight="0.4"
+                    android:padding="5dip"
+                    android:text="--"
+                    android:gravity="left"/>
+
+            </TableRow>
+
+        </TableLayout>
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:fillViewport="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearstatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="?android:dividerHorizontal"
+            android:showDividers="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:fontFamily="open_sans_light"
+                android:text="STATUS DO SERVIÇO"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todos"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/cboxstatustodos" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Autorizado"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/cboxstatusautorizado" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Concluído"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/cboxstatusconcluido" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Em aprovação"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/cboxstatusemaprovacao" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Em execução"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/cboxstatusemexecucao" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expirado"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/cboxstatusexpirado" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Não Autorizado"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:id="@+id/cboxstatusnaoautorizado" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearservicos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+           <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:fontFamily="open_sans_light"
+                android:text="SERVIÇOS"/>
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/linearrelatorio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="@integer/abertura_os_footer"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:background="@color/paletaazulclaro">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icone_consulta_de_os_gerar_relatorio"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="35">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="PESQUISAR"
+                android:textSize="@dimen/abertura_os_txyview_continuar"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="25">
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

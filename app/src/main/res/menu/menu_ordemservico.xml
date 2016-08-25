@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.esperienza.intranetmall.mobile.fragment.FragmentListaOrdemServico">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        android:title="Pesquisar"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"/>
+
+    <item
+        android:id="@+id/action_okos"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Aprovar O.S"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_consultar_os"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Consultar O.S"
+        android:visible="false"
+        app:showAsAction="never" />
+
+
+
+
+
+</menu>

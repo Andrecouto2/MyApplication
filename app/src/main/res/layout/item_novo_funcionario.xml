@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_viewos"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_fnc_height"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false"
+    card_view:cardUseCompatPadding="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="@integer/item_fnc_linearsuperior"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@integer/item_fnc_linearfoto"
+                    android:layout_marginLeft="@dimen/item_fnc_margin_left"
+                    android:layout_marginTop="@dimen/item_fnc_margin_top"
+                    android:layout_marginBottom="@dimen/item_fnc_margin_bottom">
+                <ImageView
+                    android:id="@+id/funcfoto"
+                    android:layout_width="@dimen/item_fnc_foto_width"
+                    android:layout_height="@dimen/item_fnc_foto_height"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="@dimen/item_fnc_foto_margin_top"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle"
+
+                />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/item_fnc_linearinfo"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="@integer/item_fnc_linearinfo_weight">
+
+                        <TextView
+                            android:id="@+id/textViewNome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/item_fnc_margin_top2"
+                            android:layout_marginLeft="@dimen/item_fnc_margin_left2"
+                            android:textSize="@dimen/item_fnc_textview_textsize3"
+                            android:textStyle="bold"
+                            android:text="Juliano Pereira Alvez"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/item_fnc_margin_top"
+                        android:layout_weight="@integer/item_fnc_linearinfo_weight">
+                        <TextView
+                            android:id="@+id/textViewDescSolicitanteOS2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Data Nasc.: "
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/item_fnc_margin_left2"
+                            android:textSize="@dimen/item_fnc_textview_textsize" />
+                        <TextView
+                            android:id="@+id/textViewDataNascFnc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/item_fnc_textview_textsize2"
+                            android:text="00/00/0000"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/item_fnc_margin_top"
+                        android:layout_weight="@integer/item_fnc_linearinfo_weight">
+                        <TextView
+                            android:id="@+id/textViewDescOS33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CPF: "
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/item_fnc_margin_left2"
+                            android:textSize="@dimen/item_fnc_textview_textsize" />
+                        <TextView
+                            android:id="@+id/textViewCPf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="000.000.000-00"
+                            android:textSize="@dimen/item_fnc_textview_textsize2"/>
+                        <TextView
+                            android:id="@+id/textViewDescDataOS33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cadastro: "
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/item_fnc_margin_left3"
+                            android:textSize="@dimen/item_fnc_textview_textsize" />
+                        <TextView
+                            android:id="@+id/textViewDataCadastro"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00/00/0000 "
+                            android:textSize="@dimen/item_fnc_textview_textsize2" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="@dimen/item_fnc_margin_bottom2"
+                        android:layout_marginTop="@dimen/item_fnc_margin_top"
+                        android:layout_weight="@integer/item_fnc_linearinfo_weight">
+                        <TextView
+                            android:id="@+id/textViewDescSolicitanteOS34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status: "
+                            android:textStyle="bold"
+                            android:layout_marginLeft="@dimen/item_fnc_margin_left2"
+                            android:textSize="@dimen/item_fnc_textview_textsize" />
+                        <TextView
+                            android:id="@+id/textViewStatusFnc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/item_fnc_textview_textsize2"
+                            android:layout_marginBottom="@dimen/item_fnc_margin_bottom3"
+                            android:text="Juliano Pereira Alvez"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@integer/item_fnc_linearstatus"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/enviado"
+                        android:layout_width="@dimen/item_fnc_status_width"
+                        android:layout_height="@dimen/item_fnc_status_height"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center|left"
+
+                        />
+                </LinearLayout>
+
+                <!--<TextView
+                    android:id="@+id/textViewDescSolicitanteOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Solicitante: "
+                    android:textStyle="bold"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/textViewSolicitanteOS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="12sp" />-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+       <!-- <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            >
+
+            <ImageView
+                android:id="@+id/imgviewos"
+                android:layout_width="65dp"
+                android:layout_height="@dimen/img_os_adapter_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="4dp"/>-->
+            <!-- Barra de progresso enquanto carrega
+            <ProgressBar
+                android:id="@+id/progressImg"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:layout_marginRight="6dp"
+                android:gravity="center|center_vertical"
+                android:visibility="invisible" />
+        </FrameLayout>-->
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

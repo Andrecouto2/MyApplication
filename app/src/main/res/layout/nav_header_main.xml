@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="@dimen/nav_header_height"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:gravity="bottom" android:id="@+id/LinearHeader">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="65"
+        android:background="@color/white">
+        <ImageView android:layout_width="112dp" android:layout_height="62dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="14dp"
+            android:src="@android:drawable/sym_def_app_icon" android:id="@+id/imageViewLogoShop" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="35"
+        android:orientation="vertical"
+        android:background="@color/transparent05">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/paletaazul"
+            android:layout_gravity="top">
+
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Planetário Fast Food" android:id="@+id/textViewnomeuser"
+            android:textColor="@color/paletaazul"
+            android:textStyle="bold" android:fontFamily="open-sans-light"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="14sp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="desenvolvimento" android:id="@+id/textViewemailuser" android:textColor="@color/white"
+            android:fontFamily="open-sans-light" android:layout_marginLeft="16dp" android:layout_marginBottom="5dp"
+            android:textSize="11sp"
+
+            />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:weightSum="100"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.esperienza.intranetmall.mobile.fragment.RecyclerViewFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_weight="@integer/funcionario_space_legenda_weight"
+        android:weightSum="100"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="96"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/funcionario_legenda_icone_width"
+                android:layout_height="@dimen/funcionario_legenda_icone_height"
+                android:src="@drawable/icone_titulo_funcionarios"
+                android:layout_marginLeft="@dimen/funcionario_legenda_icone_margin_left"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FUNCIONÁRIO"
+                android:layout_marginLeft="@dimen/funcionario_legenda_textviewfnc_margin_left"
+                android:textSize="@dimen/funcionario_legenda_textviewfnc_text_size"
+                android:textStyle="bold"
+                android:fontFamily="open_sans_light"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_width="@dimen/funcionario_legenda_img_update_width"
+                android:layout_height="@dimen/funcionario_legenda_img_update_height"
+                android:layout_marginLeft="@dimen/funcionario_legenda_img_update_margin_left"
+                android:layout_gravity="center"
+                android:src="@drawable/legenda_atualizar_infos"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atualizar informações"
+                android:layout_marginLeft="@dimen/funcionario_legenda_textview_update_margin_left"
+                android:textSize="@dimen/funcionario_legenda_textview_update_text_size"
+                android:fontFamily="open_sans_light"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:background="@drawable/linecircular">
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayoutFnc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="@integer/funcionario_space_lista_weight">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_fnc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_marginTop="0dp"
+        android:duplicateParentState="true">
+
+    </android.support.v7.widget.RecyclerView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabfnc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:src="@mipmap/icone_novo_cadastro_branco"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/paletaazulclaro"
+            />
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

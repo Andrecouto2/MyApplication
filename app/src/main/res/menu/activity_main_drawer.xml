@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single" >
+        <item android:id="@+id/nav_home" android:icon="@drawable/icone_home_branco"
+            android:title="Home" />
+        <item android:id="@+id/nav_circular" android:icon="@mipmap/icone_circular_branco"
+            android:title="Circular" />
+        <item android:id="@+id/nav_cadfnc" android:icon="@mipmap/icone_novo_cadastro_branco"
+            android:title="Funcionário" />
+        <item android:id="@+id/nav_os" android:icon="@mipmap/icone_ordem_de_servico_branco"
+            android:title="Ordem de serviço" />
+
+
+
+    </group>
+
+    <item android:title="" android:id="@+id/apl">
+        <menu>
+            <item android:id="@+id/nav_about" android:icon="@drawable/icone_os_app_branco"
+                android:title="Sobre" />
+            <item android:id="@+id/nav_logout" android:icon="@drawable/icone_logout_branco"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

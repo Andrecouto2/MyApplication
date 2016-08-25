@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent" android:windowSoftInputMode="stateAlwaysHidden"
+    android:layout_height="match_parent">
+    <!--<ScrollView
+        android:id="@+id/scrollViewEnderecoFnc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp">-->
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txt_cep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CEP"
+            android:fontFamily="open_sans_light"
+            android:textSize="@dimen/item_fnc_form_text_view_header_size"  />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789-"
+                android:layout_weight="1"
+                android:inputType="number|textPostalAddress"
+                android:maxLength="9"
+                android:paddingLeft="5.0dip"
+                android:tag="cep"
+                android:id="@+id/edt_cep"/>
+
+            <ImageButton
+                android:id="@+id/imgbtn_buscar_cep"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="7dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_search_black_48dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_endereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Endereço"
+            android:fontFamily="open_sans_light"
+            android:textSize="@dimen/item_fnc_form_text_view_header_size" />
+
+
+        <EditText
+            android:id="@+id/edt_endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:tag="endereco"
+            android:paddingLeft="5.0dip" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Número"
+                    android:fontFamily="open_sans_light"
+                    android:textSize="@dimen/item_fnc_form_text_view_header_size"  />
+
+                <EditText
+                    android:id="@+id/edt_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:tag="numero"
+                    android:paddingLeft="5.0dip" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txt_complemento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Complemento"
+                    android:fontFamily="open_sans_light"
+                    android:textSize="@dimen/item_fnc_form_text_view_header_size"  />
+
+                <EditText
+                    android:id="@+id/edt_complemento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:tag="complemento"
+                    android:paddingLeft="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_bairro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bairro"
+            android:fontFamily="open_sans_light"
+            android:textSize="@dimen/item_fnc_form_text_view_header_size"  />
+
+
+        <EditText
+            android:id="@+id/edt_bairro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:tag="bairro"
+            android:paddingLeft="5.0dip" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_municipio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Municipio"
+                    android:fontFamily="open_sans_light"
+                    android:textSize="@dimen/item_fnc_form_text_view_header_size"  />
+
+                <EditText
+                    android:id="@+id/edt_municipio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:tag="cidade"
+                    android:paddingLeft="5.0dip" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="100">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/txt_uf_endereco"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="UF"
+                        android:fontFamily="open_sans_light"
+                        android:textSize="@dimen/item_fnc_form_text_view_header_size"  />
+
+                    <Spinner
+                        android:id="@+id/sp_uf_endereco"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|left"
+                        android:layout_marginTop="4dp"
+                        android:layout_weight="1"
+                        android:tag="uf"
+                        android:entries="@array/ufs" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvInvisibleErrorUf"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_weight="20" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <!-- reside desde e tipo residencia-->
+        <LinearLayout
+            android:id="@+id/lyt_reside_desde_tipo_residencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".40"
+                android:orientation="horizontal">
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--</ScrollView>-->
+
+</LinearLayout>

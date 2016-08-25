@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper">
+    <ScrollView
+        android:id="@+id/scrollViewNew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="65"
+            android:orientation="vertical">
+    <ImageSwitcher
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:elevation="10dp"
+        android:background="@drawable/shoppingbanner"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="35"
+            android:orientation="horizontal"
+            android:background="#80FFFFFF">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            >
+
+            <com.esperienza.intranetmall.mobile.fonts.RoundedImageView
+                android:id="@+id/roundedimgos"
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent">
+
+            </com.esperienza.intranetmall.mobile.fonts.RoundedImageView>
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/icone_ordem_de_servico_branco"/>
+
+
+        </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center|top"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="14dp"
+                >
+
+                <com.esperienza.intranetmall.mobile.fonts.RoundedImageView
+                    android:id="@+id/roundedimgcircular"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent">
+
+                </com.esperienza.intranetmall.mobile.fonts.RoundedImageView>
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icone_circular_branco"/>
+
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_gravity="top|right"
+                android:layout_marginRight="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="14dp"
+                >
+
+                <com.esperienza.intranetmall.mobile.fonts.RoundedImageView
+                    android:id="@+id/roundedimgfnc"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent">
+
+                </com.esperienza.intranetmall.mobile.fonts.RoundedImageView>
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icone_novo_cadastro_branco"/>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+</FrameLayout>

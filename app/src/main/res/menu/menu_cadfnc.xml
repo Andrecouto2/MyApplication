@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item android:id="@+id/action_novofnc"
+        android:icon="@drawable/iconenovocadastro126x126"
+        android:title="Novo Funcionário"
+        android:orderInCategory="50"
+        app:showAsAction = "always|withText" />
+    <item android:id="@+id/action_sync"
+        android:icon="@drawable/iconsync"
+        android:title="Sincronizar"
+        android:orderInCategory="10"
+        app:showAsAction = "always|withText" />-->
+    <item
+        android:id="@+id/action_search_fnc"
+        android:icon="@drawable/ic_action_search"
+        android:title="Pesquisar"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"/>
+    <item
+        android:id="@+id/action_todos"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Todos"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_2"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Aguardando aprovação do Depto. de Segurança"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_7"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Aprovado. Aguardando Emissão do Crachá"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_8"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Cadastro reprovado pelo Depto. de Segurança"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_9"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Crachá em emissão"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_4"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Crachá na ADM. Aguardando retirada"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_3"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Foto fora do padrão. Reenviar"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_5"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Funcionário Ativo"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_6"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Funcionário Inativo"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_1"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="Novo Cadastro"
+        app:showAsAction="never" />
+
+</menu>

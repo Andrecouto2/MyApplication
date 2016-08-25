@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.esperienza.intranetmall.mobile.fragment.FragmentPessoasAutorizadas">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/pa_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewPA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="0.2dp"
+                android:layout_marginTop="0dp"
+                android:duplicateParentState="true">
+
+            </android.support.v7.widget.RecyclerView>
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:src="@android:drawable/ic_input_add"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/paletaazulclaro"
+            />
+
+    </android.support.design.widget.CoordinatorLayout>
+    <ProgressBar
+        android:id="@+id/progresspa"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginRight="6dp"
+        android:gravity="center|center_vertical"
+        android:visibility="invisible" />
+
+</LinearLayout>
